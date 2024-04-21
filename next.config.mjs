@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export', // Enables static export
-  basePath: '/musicnext', // Sets the base path to /musicnext
+  
   images: {
+    unoptimized: true, // Disables image optimization
     remotePatterns: [
       {
         protocol: 'https',
